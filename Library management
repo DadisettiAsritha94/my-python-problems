@@ -1,0 +1,15 @@
+books = ["Python", "Java", "C++"]
+while True:
+    print("\n1.View\n2.Issue\n3.Return\n4.Exit")
+    choice = input("Choice: ")
+    if choice == '1':
+        print(books)
+    elif choice == '2':
+        book = input("Book name: ")
+        if book in books:
+            books.remove(book)
+    elif choice == '3':
+        book = input("Return book: ")
+        books.append(book)
+    elif choice == '4':
+        break
